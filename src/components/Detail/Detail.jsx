@@ -10,7 +10,7 @@ const Detail = () => {
   const [character, setCharacter] = useState({});
 
   useEffect(() => {
-    axios(`http://localhost:3001/rickandmorty/character/${id}`)
+    axios(`http://localhost:3001/character/${id}`)
       .then((response) => response.data)
       .then((data) => {
         if (data.name) {

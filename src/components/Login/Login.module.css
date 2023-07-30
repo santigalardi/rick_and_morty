@@ -113,3 +113,8 @@
   font-weight: 600;
   margin-bottom: 10px;
 }
+
+.loginBtn:hover {
+  background-color: #fa9f00;
+  cursor: pointer;
+}
