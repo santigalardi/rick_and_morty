@@ -2,6 +2,8 @@ import Card from '../Card/Card';
 import styles from './Cards.module.css';
 
 export default function Cards({ characters, onClose }) {
+  const hdp = 2;
+
   return (
     <div className={styles.cardsContainer}>
       {characters.map(({ id, name, status, species, gender, origin, image }) => {
