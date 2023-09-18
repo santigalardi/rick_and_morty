@@ -20,7 +20,7 @@ function App() {
   const login = async (userData) => {
     try {
       const { email, password } = userData;
-      const URL = 'http://rickmortyserver.fly.dev/login/';
+      const URL = 'https://rickmortyserver.fly.dev/login/';
       const { data } = await axios(URL + `?email=${email}&password=${password}`);
       const { access } = data;
       setAccess(access);
@@ -36,7 +36,7 @@ function App() {
 
   const onSearch = async (id) => {
     try {
-      const { data } = await axios(`http://rickmortyserver.fly.dev/character/${id}`);
+      const { data } = await axios(`https://rickmortyserver.fly.dev/character/${id}`);
       if (data.name) {
         // Comprobar si el personaje ya existe en la lista
         const characterExists = characters.some((character) => character.id === data.id);

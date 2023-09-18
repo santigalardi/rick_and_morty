@@ -2,7 +2,7 @@ import axios from 'axios';
 import { ADD_FAV, REMOVE_FAV, FILTER, ORDER } from './action-types';
 
 export const addFav = (character) => {
-  const endpoint = 'http://rickmortyserver.fly.dev/fav';
+  const endpoint = 'https://rickmortyserver.fly.dev/fav';
   return async (dispatch, getState) => {
     try {
       // Verificar si el personaje ya está en la lista de favoritos
@@ -28,7 +28,7 @@ export const addFav = (character) => {
 };
 
 export const removeFav = (id) => {
-  const endpoint = `http://rickmortyserver.fly.dev/fav/${id}`;
+  const endpoint = `https://rickmortyserver.fly.dev/fav/${id}`;
   return async (dispatch) => {
     try {
       const { data } = await axios.delete(endpoint);
