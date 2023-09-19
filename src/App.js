@@ -26,7 +26,7 @@ function App() {
       setAccess(access);
       access && navigate('/home');
     } catch (error) {
-      setLoginError('Credenciales inválidas');
+      setLoginError('Credenciales inválidas. Email:rick@gmail.com Password:morty123');
     }
   };
 
