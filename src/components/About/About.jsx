@@ -1,4 +1,4 @@
-import pfp from '../../assets/img/profile-pic.png';
+import profilePicture from '../../assets/img/profile-pic4.png';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import styles from './About.module.css';
 
@@ -23,7 +23,7 @@ const Detail = () => {
           </div>
         </div>
         <div className={styles.imgContainer}>
-          <img src={pfp} alt='Santiago Galardi' />
+          <img src={profilePicture} alt='Santiago Galardi' />
         </div>
       </div>
     </div>

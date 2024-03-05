@@ -11,8 +11,6 @@ const Form = ({ login, loginError }) => {
     password: '',
   });
 
-  const hdp = 1;
-
   const handleChange = (event) => {
     setUserData({
       ...userData,
