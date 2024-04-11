@@ -56,6 +56,9 @@ const Form = ({ login, loginError }) => {
           <button type='submit' className={styles.loginBtn}>
             Submit
           </button>
+
+          <span>email: rick@gmail.com</span>
+          <span>password: morty123</span>
           {loginError && <p>{loginError}</p>}
         </form>
       </div>
